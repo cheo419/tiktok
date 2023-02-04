@@ -10,9 +10,9 @@ class TikTokApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter TikTok',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFFE9435A),
       ),
       home: Container(),
     );
