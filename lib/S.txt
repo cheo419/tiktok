@@ -1,0 +1,2 @@
+#sign up screen
+SafeArea = safearea를 사용하면 그안에 있는 모든것은 특정 공간에 있을거라고 보장함 ex)상태바같이 그 공간은 확실하게 뭔가에 가려지지않게끔
