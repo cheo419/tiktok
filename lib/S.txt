@@ -6,3 +6,7 @@ Navigator.of(context).push() = 화면을 위에 올려놓음
 Navigator.of(context).pop() = 화면을 없앰(=뒤로가기)
 FractionallySizedBox(Widget) = 기본적으로 box위젯인데 크기를 단순히 픽셀로 정하는게 아니라 부모의 크기에 비례해서 크기를 정하게 해주는 위젯
 ex)부모의 크기가 1000px이고 FractionallySizedBox의 widthFactor가 1 이라면 FractionallySizedBox의 너비는 부모의 너비의 100%가 될것이고 widthFactor가 0.5로 설정되어있고 부모의 너비가 1000px 이라면 FractionallySizedBox의 너비는 500px이 될것임
+
+#authbutton
+Stack(widget) = stack을 이해하기위한 설명 : Column이 어떤역활을 하는지 기억해보면 여러 위젯들을 세로로 차례대로 배치할수있게 해줌, row는? 위젯들을 옆으로 배치할수있게 해줌, stack은 위에다가 쌓을수있게 해줌, 말그대로 위에 쌓을수 있게끔 팬케이크처럼
+Align(widget) = 하나의 정렬만 바꿀수있게 해줌
