@@ -1,2 +1,8 @@
 #sign up screen
 SafeArea = safearea를 사용하면 그안에 있는 모든것은 특정 공간에 있을거라고 보장함 ex)상태바같이 그 공간은 확실하게 뭔가에 가려지지않게끔
+
+#login screen
+Navigator.of(context).push() = 화면을 위에 올려놓음
+Navigator.of(context).pop() = 화면을 없앰(=뒤로가기)
+FractionallySizedBox(Widget) = 기본적으로 box위젯인데 크기를 단순히 픽셀로 정하는게 아니라 부모의 크기에 비례해서 크기를 정하게 해주는 위젯
+ex)부모의 크기가 1000px이고 FractionallySizedBox의 widthFactor가 1 이라면 FractionallySizedBox의 너비는 부모의 너비의 100%가 될것이고 widthFactor가 0.5로 설정되어있고 부모의 너비가 1000px 이라면 FractionallySizedBox의 너비는 500px이 될것임
