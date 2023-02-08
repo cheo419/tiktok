@@ -10,3 +10,6 @@ ex)부모의 크기가 1000px이고 FractionallySizedBox의 widthFactor가 1 이
 #authbutton
 Stack(widget) = stack을 이해하기위한 설명 : Column이 어떤역활을 하는지 기억해보면 여러 위젯들을 세로로 차례대로 배치할수있게 해줌, row는? 위젯들을 옆으로 배치할수있게 해줌, stack은 위에다가 쌓을수있게 해줌, 말그대로 위에 쌓을수 있게끔 팬케이크처럼
 Align(widget) = 하나의 정렬만 바꿀수있게 해줌
+
+#sing up form
+tip) 메서드앞에 _ 언더바 쓰기 생활화하기(이유는 다른언어처럼 퍼블릭 프라이빗 프로텍드 같은게 없기때문에 _로 프라이빗이라고 표시해두는것)
