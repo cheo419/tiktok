@@ -5,41 +5,48 @@ import 'package:tiktok/constants/sizes.dart';
 class AuthButton extends StatelessWidget {
   final String text;
   final FaIcon icon;
+  final Function onTapMovePage;
 
   const AuthButton({
     super.key,
     required this.text,
     required this.icon,
+    required this.onTapMovePage,
   });
 
   @override
   Widget build(BuildContext context) {
-    return FractionallySizedBox(
-      widthFactor: 1,
-      child: Container(
-        padding: const EdgeInsets.all(Sizes.size14),
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: Colors.grey.shade300,
-            width: Sizes.size1,
+    return GestureDetector(
+      onTap: () => onTapMovePage(context),
+      child: FractionallySizedBox(
+        widthFactor: 1,
+        child: Container(
+          padding: const EdgeInsets.all(
+            Sizes.size14,
           ),
-        ),
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: icon,
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.grey.shade300,
+              width: Sizes.size1,
             ),
-            Expanded(
-              child: Text(
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: icon,
+              ),
+              Text(
                 text,
                 style: const TextStyle(
-                    fontSize: Sizes.size16, fontWeight: FontWeight.w600),
+                  fontSize: Sizes.size16,
+                  fontWeight: FontWeight.w600,
+                ),
                 textAlign: TextAlign.center,
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
