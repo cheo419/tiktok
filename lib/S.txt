@@ -13,3 +13,20 @@ Align(widget) = 하나의 정렬만 바꿀수있게 해줌
 
 #sing up form
 tip) 메서드앞에 _ 언더바 쓰기 생활화하기(이유는 다른언어처럼 퍼블릭 프라이빗 프로텍드 같은게 없기때문에 _로 프라이빗이라고 표시해두는것)
+
+#username screen
+TextField() = html input 느낌
+cursorColor = 글씨쓸때 깜빡이는 모션 색깔
+hintText = html placeholder 느낌
+bordercolor = 밑줄색깔
+코드참조설명생략(포커싱됬을때안됬을때밑줄) = 
+enabledBorder: UnderlineInputBorder(
+borderSide: BorderSide(
+color: Colors.grey.shade400,
+),
+),
+focusedBorder: UnderlineInputBorder(
+borderSide: BorderSide(
+color: Colors.grey.shade400,
+Controller = 코드,메서드 등으로 textfield와 같은 위젯을 컨트롤 할수있게해줌, statefulwidget써야함
+AnimatedContainer = decoration이 바뀌었을때 애니메이션 효과를 넣어줌
