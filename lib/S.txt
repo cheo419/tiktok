@@ -57,4 +57,5 @@ suffixIcon = 뒤에있는 아이콘, 포커스하면 위젯색이 바뀜
 #birthday screen
 date 설정
 cupertino = 쿠퍼티노가 붙으면 이 위젯은 애플의 디자인 가이드라인을 따라서 만들어졌다는 뜻
+enabled : false = 입력창 비활성화
 
