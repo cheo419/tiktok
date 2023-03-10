@@ -48,17 +48,16 @@ class LoginScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Gaps.v40,
-              GestureDetector(
-                onTap: () => _onEmailLoginTap(context),
-                child: const AuthButton(
-                  icon: FaIcon(FontAwesomeIcons.user),
-                  text: "Use email & password",
-                ),
+              AuthButton(
+                icon: const FaIcon(FontAwesomeIcons.user),
+                text: "Use email & password",
+                onTapMovePage: _onEmailLoginTap,
               ),
               Gaps.v16,
-              const AuthButton(
-                icon: FaIcon(FontAwesomeIcons.apple),
+              AuthButton(
+                icon: const FaIcon(FontAwesomeIcons.apple),
                 text: "Continue with Apple",
+                onTapMovePage: _onEmailLoginTap,
               ),
             ],
           ),
