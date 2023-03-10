@@ -59,3 +59,6 @@ date 설정
 cupertino = 쿠퍼티노가 붙으면 이 위젯은 애플의 디자인 가이드라인을 따라서 만들어졌다는 뜻
 enabled : false = 입력창 비활성화
 
+#login form
+validator = string 타입을 반환하고 string 타입을 매개변수로 받는 함수
+
